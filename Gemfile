@@ -8,6 +8,11 @@ gem 'rails', '4.0.2'
 group :development, :test do
 	gem 'rspec-rails'
 	gem 'sqlite3', '1.3.8'
+	gem 'rspec-autotest'
+
+	gem 'ZenTest'
+	gem 'autotest-growl'
+	gem 'autotest-rails-pure'
 end
 
 group :test do
@@ -41,6 +46,10 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+# For autotest notifications
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
