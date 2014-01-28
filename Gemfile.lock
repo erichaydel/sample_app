@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     ZenTest (4.9.5)
     actionmailer (4.0.2)
@@ -30,6 +30,8 @@ GEM
     atomic (1.1.14)
     autotest-growl (0.2.16)
     autotest-rails-pure (4.1.2)
+    bootstrap-sass (2.3.2.0)
+      sass (~> 3.2)
     builder (3.1.4)
     capybara (2.1.0)
       mime-types (>= 1.16)
@@ -157,6 +159,7 @@ DEPENDENCIES
   ZenTest
   autotest-growl
   autotest-rails-pure
+  bootstrap-sass (= 2.3.2.0)
   capybara (= 2.1.0)
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
