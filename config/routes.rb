@@ -1,4 +1,5 @@
 SampleApp::Application.routes.draw do
+	resources :users
 
 	root 'pages#home'
 	match '/help',    to: 'pages#help',    via: 'get'

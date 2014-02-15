@@ -14,6 +14,7 @@ group :development, :test do
 	gem 'rspec-rails'
 	gem 'sqlite3', '1.3.8'
 	gem 'rspec-autotest'
+	gem 'factory_girl_rails', '4.1.0'
 
 	gem 'ZenTest'
 	gem 'autotest-growl'
