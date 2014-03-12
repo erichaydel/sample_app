@@ -28,10 +28,19 @@ describe "UserPages" do
 		
 		describe "with invalid information" do
 			it "should not create a user" do
-				expect { click_button "Create my account"}.not_to change(User, :count)
+				expect { click_button submit}.not_to change(User, :count)
 				
 			end
+			
+			describe "after signup" do
+				before { click_button submit }
+				
+				it { should have_title('Sign up') }
+				it { should have_content('error') }
+			end
+			
 		end
+		
 		
 		describe "with valid information" do
 			before do
@@ -51,6 +60,8 @@ describe "UserPages" do
 			
 				let(:user) { User.find_by_email("user@example.com") }
 				it { should have_title(user.name) }
+				it { should have_selector('div.alert.alert-success', text: 'Welcome') }
+				it { should have_link('Sign out') }
 			end
 		end
 		

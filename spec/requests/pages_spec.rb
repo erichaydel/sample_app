@@ -35,8 +35,8 @@ describe "Pages" do
 	
 	# it "should have the right links on the layout" do
 		# visit root_path
-		# click_link "About"
-		# expect(page)
+		# click_link "Sign in"
+		# page.should have_title(full_title('Sign up'))
 	# end
 end
 
