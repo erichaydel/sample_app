@@ -8,7 +8,8 @@ gem 'bcrypt-ruby', '3.1.2'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
-
+#gem 'spork', :github => 'sporkrb/spork'
+#gem 'spork-rails', :github => 'sporkrb/spork-rails'
 
 group :development, :test do
 	gem 'rspec-rails'
@@ -19,6 +20,10 @@ group :development, :test do
 	gem 'ZenTest'
 	gem 'autotest-growl'
 	gem 'autotest-rails-pure'
+	
+	gem 'spork-rails', '4.0.0'
+  gem 'guard-spork', '1.5.0'
+  gem 'childprocess', '0.3.6'
 end
 
 group :test do
