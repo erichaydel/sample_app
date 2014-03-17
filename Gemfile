@@ -6,8 +6,8 @@ gem 'rails', '4.0.2'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'faker', '1.0.1'
-gem 'will_paginate', '3.0.3'
-gem 'bootstrap-will_paginate', '0.0.6'
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.10'
 #gem 'spork', :github => 'sporkrb/spork'
 #gem 'spork-rails', :github => 'sporkrb/spork-rails'
 
@@ -20,7 +20,7 @@ group :development, :test do
 	gem 'ZenTest'
 	gem 'autotest-growl'
 	gem 'autotest-rails-pure'
-	
+
 	gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.3.6'
@@ -30,8 +30,8 @@ group :test do
 	gem 'selenium-webdriver', '2.35.1'
 	gem 'capybara', '2.1.0'
 end
-	
-	
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
